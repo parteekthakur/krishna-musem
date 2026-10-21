@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Dashboard - Krishna Museum</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>Krishna Museum</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/travel">Travel</a></li>
+        <li><a href="/artefacts">Artefacts</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+    <div class="auth-buttons">
+        <a href="/login" id="loginBtn" class="btn">Login</a>
+        <a href="/register" id="registerBtn" class="btn">Register</a>
+        <button id="logoutBtn" onclick="logout()" class="btn">Logout</button>
+        <span id="welcomeText" style="margin-left:10px; color:#bb86fc;"></span>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>My Dashboard</h1>
+    <p>Manage your museum experience</p>
+</section>
+
+<!-- DASHBOARD CONTAINER -->
+<div class="dashboard-container">
+    
+    <!-- PROFILE SECTION -->
+    <div id="profile-section"></div>
+
+    <!-- DASHBOARD STATS -->
+    <h2 style="text-align:center; color:#bb86fc; margin-top:40px;">Your Activity</h2>
+    <div id="dashboard-stats" class="dashboard-grid"></div>
+
+    <!-- REGISTERED EVENTS SECTION -->
+    <div class="registered-events-section" style="margin-top:40px;">
+        <h2 style="color:#bb86fc; margin-top:0;">🎫 My Registered Events</h2>
+        <div id="registered-events"></div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="text-align:center; padding:30px; margin-top:50px;">
+    <p>© 2026 Krishna Museum Kurukshetra | Enhanced with ✨ Animations</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/js/script.js"></script>
+<script src="/js/animations.js"></script>
+<script src="/js/dashboard.js"></script>
+<script src="/js/theme-toggle.js"></script>
+</body>
+</html>
